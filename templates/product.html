@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ product.name }} - SquiShop</title>
+    <style>
+        body { font-family: Arial; background: #e0f0f0; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; }
+        .price { color: green; font-size: 24px; font-weight: bold; }
+        .btn { background: #90d0a0; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ product.name }}</h1>
+        <p class="price">{{ product.price }} ₽</p>
+        <p><strong>Описание:</strong> {{ product.description }}</p>
+        <p><strong>Категория:</strong> {{ product.category }}</p>
+        <p><strong>Материал:</strong> {{ product.material }}</p>
+        <p><strong>Возрастное ограничение:</strong> {{ product.age_limit }}</p>
+        <p><strong>Редкость:</strong> {{ product.rarity }}</p>
+        <p><strong>В наличии:</strong> {{ product.stock_quantity }} шт.</p>
+        <button class="btn">Добавить в корзину</button>
+        <br><br>
+        <a href="/">← Вернуться в каталог</a>
+    </div>
+</body>
+</html>
