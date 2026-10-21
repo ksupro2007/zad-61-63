@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 def get_db():
     try:
-        server_name = r'localhost\SQLEXPRESS' 
+        server_name = r'localhost\SQLEXPRESS'
 
         conn_str = (
             "DRIVER={ODBC Driver 18 for SQL Server};"
